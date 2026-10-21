@@ -1,0 +1,6 @@
+env/
+__pycache__/
+*.wav
+*.webm
+.cache/
+.DS_Store

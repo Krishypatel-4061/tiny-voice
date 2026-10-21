@@ -1,0 +1,11 @@
+{
+  "labels": [
+    "light",
+    "fan",
+    "up",
+    "down",
+    "stop",
+    "_unknown_",
+    "_silence_"
+  ]
+}

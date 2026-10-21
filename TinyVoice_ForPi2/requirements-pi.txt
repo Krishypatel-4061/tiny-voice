@@ -1,0 +1,22 @@
+# ===========================================================
+# TinyVoice - RASPBERRY PI 4 (deployment only, no training)
+# Install with:  pip install -r requirements-pi.txt
+#
+# NOTE: TensorFlow is deliberately ABSENT. The Pi only needs the
+# small LiteRT interpreter, not the whole training framework.
+# ===========================================================
+numpy>=1.24,<2.1
+scipy>=1.10
+python_speech_features==0.6
+sounddevice>=0.4.6
+ai-edge-litert>=1.0.1            # LiteRT interpreter (the "TFLite runtime")
+gpiozero>=2.0                    # GPIO control
+lgpio>=0.2.2                     # gpiozero backend for Raspberry Pi OS Bookworm
+
+# --- optional, only if you add the OLED ---
+# adafruit-circuitpython-ssd1306
+# adafruit-blinka
+# pillow
+
+# --- optional, only for running evaluate_model.py plots on the Pi ---
+# matplotlib

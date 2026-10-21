@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TinyVoice Web Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .btn {
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            padding: 20px 40px;
+            font-size: 24px;
+            margin: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 300px;
+        }
+
+        .btn:hover {
+            background-color: #16a085;
+        }
+
+        .btn-danger {
+            background-color: #e74c3c;
+        }
+
+        .btn-danger:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>TinyVoice Manual Override</h1>
+    <p>Select a command below to test hardware actuation.</p>
+
+    <form method="POST" action="/command">
+        <button class="btn" name="action" value="LIGHT ON">Turn Light ON</button><br>
+        <button class="btn btn-danger" name="action" value="LIGHT OFF">Turn Light OFF</button><br>
+        <br>
+        <button class="btn" name="action" value="UP">Rotate Servo UP</button><br>
+        <button class="btn btn-danger" name="action" value="DOWN">Rotate Servo DOWN</button>
+    </form>
+</body>
+
+</html>

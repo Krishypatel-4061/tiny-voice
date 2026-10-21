@@ -1,0 +1,58 @@
+{
+  "labels": [
+    "on",
+    "off",
+    "up",
+    "down",
+    "stop",
+    "_unknown_",
+    "_silence_"
+  ],
+  "feature_shape": [
+    49,
+    13,
+    1
+  ],
+  "sample_rate": 16000,
+  "split_mode": "clip-level (fewer than 3 speakers - results optimistic)",
+  "test_speakers": [],
+  "val_speakers": [],
+  "summary": {
+    "train": {
+      "total": 24905,
+      "per_class": {
+        "on": 4870,
+        "off": 4915,
+        "up": 4915,
+        "down": 4785,
+        "stop": 4780,
+        "_unknown_": 0,
+        "_silence_": 640
+      }
+    },
+    "val": {
+      "total": 649,
+      "per_class": {
+        "on": 122,
+        "off": 103,
+        "up": 95,
+        "down": 117,
+        "stop": 132,
+        "_unknown_": 0,
+        "_silence_": 80
+      }
+    },
+    "test": {
+      "total": 658,
+      "per_class": {
+        "on": 104,
+        "off": 114,
+        "up": 122,
+        "down": 126,
+        "stop": 112,
+        "_unknown_": 0,
+        "_silence_": 80
+      }
+    }
+  }
+}
